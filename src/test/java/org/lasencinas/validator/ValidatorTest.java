@@ -38,10 +38,16 @@ public class ValidatorTest {
 
         incorrectDni.formDNI();
         assertFalse(Validator.validateDNI(incorrectDni, regularExpressions, "DNI"));
+    }
 
-        /*regularExpressions.addRegExpression("NIE", "^[XYZ]{1}]\\d{7}[A-Z&&[^IÑOU]]{1}]$");
+    @Test
+    public void validateNies() {
+        regularExpressions.addRegExpression("NIE", "^[XYZ]{1}\\d{7}[A-Z&&[^IÑOU]]{1}$");
         nie.formNIE();
-        assertTrue(Validator.validateNIE(nie, regularExpressions, "NIE"));*/
+        assertTrue(Validator.validateNIE(nie, regularExpressions, "NIE"));
+
+        incorrectNIE.formNIE();
+        assertFalse(Validator.validateNIE(incorrectNIE, regularExpressions, "NIE"));
     }
 
 }
