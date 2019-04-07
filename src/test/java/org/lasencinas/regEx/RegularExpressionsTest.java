@@ -26,7 +26,7 @@ public class RegularExpressionsTest {
     @Test
     public void addRegExpressionTest() {
         String regEx = "^\\d{8}[A-Z&&[^IÑOU]]{1}$";
-        String regEx2 = "^[XYZ]{1}]\\d{7}[A-Z&&[^IÑOU]]{1}]$";
+        String regEx2 = "^[XYZ]{1}\\d{7}[A-Z&&[^IÑOU]]{1}$";
 
         regularExpressions.addRegExpression("DNI", regEx);
         regularExpressions.addRegExpression("NIE", regEx2);
