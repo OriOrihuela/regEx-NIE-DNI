@@ -133,5 +133,58 @@ public class Main {
          */
         validator.formDocuments();
         validator.countValidDocuments(regularExpressions);
+
+        /**
+         * We weill display the result just to make them visible:
+         *
+         *
+         * The DNI 4578C is not a valid one, please enter a correct one or we will call the police.
+         * The DNI 78945612O is not a valid one, please enter a correct one or we will call the police.
+         * The DNI 11817200Q is valid.
+         * The DNI 78945621p is not a valid one, please enter a correct one or we will call the police.
+         * The DNI 63587725Q is valid.
+         * The DNI 100E is not a valid one, please enter a correct one or we will call the police.
+         * The DNI 26868974Y is valid.
+         * The DNI 72376173A is valid.
+         * The DNI 89044648X is valid.
+         * The DNI 236Q is not a valid one, please enter a correct one or we will call the police.
+         * The DNI 78484464T is valid.
+         * The DNI 21616083Q is valid.
+         * The DNI 546t is not a valid one, please enter a correct one or we will call the police.
+         * The DNI 26861694V is valid.
+         * The DNI 12A is not a valid one, please enter a correct one or we will call the police.
+         * The DNI 96345896U is not a valid one, please enter a correct one or we will call the police.
+         * The DNI 78945612I is not a valid one, please enter a correct one or we will call the police.
+         * The DNI 40135330P is valid.
+         * The DNI 95882054E is valid.
+         * The DNI 7458P is not a valid one, please enter a correct one or we will call the police.
+         *
+         *
+         * The NIE X5566443X is valid.
+         * The NIE Y9978963Ñ is not a valid one, please enter a correct one or we will call the police.
+         * The NIE Z8796430G is valid.
+         * The NIE Y3300147Z is valid.
+         * The NIE Z7894510u is not a valid one, please enter a correct one or we will call the police.
+         * The NIE X4572263O is not a valid one, please enter a correct one or we will call the police.
+         * The NIE Y3300213R is valid.
+         * The NIE Y45A is not a valid one, please enter a correct one or we will call the police.
+         * The NIE X45763i is not a valid one, please enter a correct one or we will call the police.
+         * The NIE Z4531269V is valid.
+         * The NIE I4578963A is not a valid one, please enter a correct one or we will call the police.
+         * The NIE P45763A is not a valid one, please enter a correct one or we will call the police.
+         * The NIE X9999745P is valid.
+         * The NIE Y4563017B is valid.
+         * The NIE X8963A is not a valid one, please enter a correct one or we will call the police.
+         * The NIE Z4578963U is not a valid one, please enter a correct one or we will call the police.
+         * The NIE G4963A is not a valid one, please enter a correct one or we will call the police.
+         * The NIE X4578963A is valid.
+         * The NIE X2543312A is valid.
+         * The NIE Z8764559Y is valid.
+         *
+         * The number of correct DNIs is 10.
+         * The number of incorrect DNIs is 10.
+         * The number of correct NIEs is 10.
+         * The number of incorrect NIEs is 10.
+         */
     }
 }
