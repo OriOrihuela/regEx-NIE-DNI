@@ -10,7 +10,7 @@ import java.util.regex.Pattern;
 public class Validator {
 
     /* ---- Behaviours ---- */
-    public static void validateDNI(DNI dni, RegularExpressions regularExpressions, String identifier) {
+    public static boolean validateDNI(DNI dni, RegularExpressions regularExpressions, String identifier) {
 
         String regEx = regularExpressions.takeOutRegExpression(identifier);
         Pattern pattern = Pattern.compile(regEx);
@@ -18,12 +18,14 @@ public class Validator {
 
         if (matcher.matches()) {
             System.out.println("This DNI is valid");
+            return true;
         } else {
             System.out.println("This is not a valid DNI, please enter a correct one or we will call the police");
+            return false;
         }
     }
 
-    public static void validateNIE(NIE nie, RegularExpressions regularExpressions, String identifier) {
+    public static boolean validateNIE(NIE nie, RegularExpressions regularExpressions, String identifier) {
 
         String regEx = regularExpressions.takeOutRegExpression(identifier);
         Pattern pattern = Pattern.compile(regEx);
@@ -31,8 +33,10 @@ public class Validator {
 
         if (matcher.matches()) {
             System.out.println("This NIE is valid");
+            return true;
         } else {
             System.out.println("This is not a valid NIE, please enter a correct one or we will call the police");
+            return false;
         }
     }
 }
