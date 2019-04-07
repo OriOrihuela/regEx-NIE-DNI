@@ -43,9 +43,9 @@ public class Main {
         DNI dni12 = new DNI(12,'A');
         DNI dni13 = new DNI(236,'Q');
         DNI dni14 = new DNI(100,'E');
-        DNI dni15 = new DNI(78945621,'Ñ');
+        DNI dni15 = new DNI(78945621,'p');
         DNI dni16 = new DNI(4578,'C');
-        DNI dni17 = new DNI(546,'T');
+        DNI dni17 = new DNI(546,'t');
         DNI dni18 = new DNI(78945612,'I');
         DNI dni19 = new DNI(78945612,'O');
         DNI dni20 = new DNI(96345896,'U');
@@ -61,16 +61,16 @@ public class Main {
         NIE nie9 = new NIE('Z', 8764559, 'Y');
         NIE nie10 = new NIE('X', 9999745, 'P');
 
-        NIE nie11 = new NIE('X', 45763, 'A');
+        NIE nie11 = new NIE('X', 45763, 'i');
         NIE nie12 = new NIE('I', 4578963, 'A');
         NIE nie13 = new NIE('P', 45763, 'A');
         NIE nie14 = new NIE('Y', 45, 'A');
-        NIE nie15 = new NIE('Z', 4578963, 'A');
+        NIE nie15 = new NIE('Z', 4578963, 'U');
         NIE nie16 = new NIE('G', 4963, 'A');
         NIE nie17 = new NIE('X', 8963, 'A');
         NIE nie18 = new NIE('Y', 9978963, 'Ñ');
         NIE nie19 = new NIE('X', 4572263, 'O');
-        NIE nie20 = new NIE('Z', 45, 'A');
+        NIE nie20 = new NIE('Z', 7894510, 'u');
 
         /**
          * Now, we create the Validator system.
@@ -127,5 +127,11 @@ public class Main {
         validator.addNie(nie18);
         validator.addNie(nie19);
         validator.addNie(nie20);
+
+        /**
+         * Now, we finally can validate all the DNIs and NIEs :D
+         */
+        validator.formDocuments();
+        validator.countValidDocuments(regularExpressions);
     }
 }
