@@ -17,10 +17,11 @@ public class Validator {
         Matcher matcher = pattern.matcher(dni.getDni());
 
         if (matcher.matches()) {
-            System.out.println("This DNI is valid.");
+            System.out.println("The DNI " + dni.getDni() + " is valid.");
             return true;
         } else {
-            System.out.println("This is not a valid DNI, please enter a correct one or we will call the police.");
+            System.out.println("The DNI" + dni.getDni() + " is not a valid one, please enter a correct one or we " +
+                    "will call the police.");
             return false;
         }
     }
@@ -32,10 +33,11 @@ public class Validator {
         Matcher matcher = pattern.matcher(nie.getNie());
 
         if (matcher.matches()) {
-            System.out.println("This NIE is valid.");
+            System.out.println("The NIE " + nie.getNie() + " is valid.");
             return true;
         } else {
-            System.out.println("This is not a valid NIE, please enter a correct one or we will call the police.");
+            System.out.println("The NIE" + nie.getNie() + " is not a valid one, please enter a correct one or we " +
+                    "will call the police.");
             return false;
         }
     }
