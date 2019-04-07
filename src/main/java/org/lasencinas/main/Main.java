@@ -135,7 +135,7 @@ public class Main {
         validator.countValidDocuments(regularExpressions);
 
         /**
-         * We weill display the result just to make them visible:
+         * We will display the result just to make them visible:
          *
          *
          * The DNI 4578C is not a valid one, please enter a correct one or we will call the police.
