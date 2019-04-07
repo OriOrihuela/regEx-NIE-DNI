@@ -115,9 +115,9 @@ public class Validator {
             }
         }
 
-        System.out.println("The number of correct DNIs is " + correctDNIs + '.' + '\n' +
+        System.out.println('\n' + "The number of correct DNIs is " + correctDNIs + '.' + '\n' +
                 "The number of incorrect DNIs is " + incorrectDNIs + '.' + '\n' +
                 "The number of correct NIEs is " + correctNIEs + '.' + '\n' +
-                "The number of incorrect NIes is " + incorrectNIEs + '.' + '\n');
+                "The number of incorrect NIEs is " + incorrectNIEs + '.' + '\n');
     }
 }
