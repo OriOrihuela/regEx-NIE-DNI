@@ -80,6 +80,52 @@ public class Main {
         Set<NIE> nieSet = new HashSet<>();
         Validator validator = new Validator(dniSet, nieSet);
 
+        /**
+         * After creating the Validator System, we need to introduce all the DNIs and NIEs into the Validator database.
+         */
 
+        validator.addDni(dni);
+        validator.addDni(dni2);
+        validator.addDni(dni3);
+        validator.addDni(dni4);
+        validator.addDni(dni5);
+        validator.addDni(dni6);
+        validator.addDni(dni7);
+        validator.addDni(dni8);
+        validator.addDni(dni9);
+        validator.addDni(dni10);
+
+        validator.addDni(dni11);
+        validator.addDni(dni12);
+        validator.addDni(dni13);
+        validator.addDni(dni14);
+        validator.addDni(dni15);
+        validator.addDni(dni16);
+        validator.addDni(dni17);
+        validator.addDni(dni18);
+        validator.addDni(dni19);
+        validator.addDni(dni20);
+
+        validator.addNie(nie);
+        validator.addNie(nie2);
+        validator.addNie(nie3);
+        validator.addNie(nie4);
+        validator.addNie(nie5);
+        validator.addNie(nie6);
+        validator.addNie(nie7);
+        validator.addNie(nie8);
+        validator.addNie(nie9);
+        validator.addNie(nie10);
+
+        validator.addNie(nie11);
+        validator.addNie(nie12);
+        validator.addNie(nie13);
+        validator.addNie(nie14);
+        validator.addNie(nie15);
+        validator.addNie(nie16);
+        validator.addNie(nie17);
+        validator.addNie(nie18);
+        validator.addNie(nie19);
+        validator.addNie(nie20);
     }
 }
