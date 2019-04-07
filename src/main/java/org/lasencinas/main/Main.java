@@ -3,6 +3,10 @@ package org.lasencinas.main;
 import org.lasencinas.dni.DNI;
 import org.lasencinas.nie.NIE;
 import org.lasencinas.regEx.RegularExpressions;
+import org.lasencinas.validator.Validator;
+
+import java.util.HashSet;
+import java.util.Set;
 
 public class Main {
     public static void main(String[] args) {
@@ -67,5 +71,15 @@ public class Main {
         NIE nie18 = new NIE('Y', 9978963, 'Ñ');
         NIE nie19 = new NIE('X', 4572263, 'O');
         NIE nie20 = new NIE('Z', 45, 'A');
+
+        /**
+         * Now, we create the Validator system.
+         */
+
+        Set<DNI> dniSet = new HashSet<>();
+        Set<NIE> nieSet = new HashSet<>();
+        Validator validator = new Validator(dniSet, nieSet);
+
+
     }
 }
