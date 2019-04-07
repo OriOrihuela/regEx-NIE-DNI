@@ -20,7 +20,7 @@ public class Validator {
             System.out.println("The DNI " + dni.getDni() + " is valid.");
             return true;
         } else {
-            System.out.println("The DNI" + dni.getDni() + " is not a valid one, please enter a correct one or we " +
+            System.out.println("The DNI " + dni.getDni() + " is not a valid one, please enter a correct one or we " +
                     "will call the police.");
             return false;
         }
@@ -36,7 +36,7 @@ public class Validator {
             System.out.println("The NIE " + nie.getNie() + " is valid.");
             return true;
         } else {
-            System.out.println("The NIE" + nie.getNie() + " is not a valid one, please enter a correct one or we " +
+            System.out.println("The NIE " + nie.getNie() + " is not a valid one, please enter a correct one or we " +
                     "will call the police.");
             return false;
         }
