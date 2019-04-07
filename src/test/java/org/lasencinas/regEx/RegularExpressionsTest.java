@@ -34,7 +34,7 @@ public class RegularExpressionsTest {
         assertNotNull(regularExpressions.getRegularExpressions());
         assertEquals(2, regularExpressions.getSize());
         assertEquals(regEx, regularExpressions.takeOutRegExpression("DNI"));
-        assertEquals(regEx2, regularExpressions.takeOutRegExpression("NIE") );
+        assertEquals(regEx2, regularExpressions.takeOutRegExpression("NIE"));
     }
 
 
