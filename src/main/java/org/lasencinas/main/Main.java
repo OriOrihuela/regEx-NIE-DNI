@@ -25,54 +25,6 @@ public class Main {
         regularExpressions.addRegExpression("NIE", "^[XYZ]{1}\\d{7}[A-Z&&[^IÑOU]]{1}$");
 
         /**
-         * Now, we create the DNIs and NIEs that will be validated by ours system.
-         */
-
-        DNI dni = new DNI(78484464, 'T');
-        DNI dni2 = new DNI(72376173, 'A');
-        DNI dni3 = new DNI(11817200, 'Q');
-        DNI dni4 = new DNI(95882054, 'E');
-        DNI dni5 = new DNI(63587725, 'Q');
-        DNI dni6 = new DNI(26861694, 'V');
-        DNI dni7 = new DNI(21616083, 'Q');
-        DNI dni8 = new DNI(26868974, 'Y');
-        DNI dni9 = new DNI(40135330, 'P');
-        DNI dni10 = new DNI(89044648, 'X');
-
-        DNI dni11 = new DNI(7458,'P');
-        DNI dni12 = new DNI(12,'A');
-        DNI dni13 = new DNI(236,'Q');
-        DNI dni14 = new DNI(100,'E');
-        DNI dni15 = new DNI(78945621,'p');
-        DNI dni16 = new DNI(4578,'C');
-        DNI dni17 = new DNI(546,'t');
-        DNI dni18 = new DNI(78945612,'I');
-        DNI dni19 = new DNI(78945612,'O');
-        DNI dni20 = new DNI(96345896,'U');
-
-        NIE nie = new NIE('X', 4578963, 'A');
-        NIE nie2 = new NIE('Y', 4563017, 'B');
-        NIE nie3 = new NIE('Z', 8796430, 'G');
-        NIE nie4 = new NIE('X', 2543312, 'A');
-        NIE nie5 = new NIE('Y', 3300213, 'R');
-        NIE nie6 = new NIE('Z', 4531269, 'V');
-        NIE nie7 = new NIE('X', 5566443, 'X');
-        NIE nie8 = new NIE('Y', 3300147, 'Z');
-        NIE nie9 = new NIE('Z', 8764559, 'Y');
-        NIE nie10 = new NIE('X', 9999745, 'P');
-
-        NIE nie11 = new NIE('X', 45763, 'i');
-        NIE nie12 = new NIE('I', 4578963, 'A');
-        NIE nie13 = new NIE('P', 45763, 'A');
-        NIE nie14 = new NIE('Y', 45, 'A');
-        NIE nie15 = new NIE('Z', 4578963, 'U');
-        NIE nie16 = new NIE('G', 4963, 'A');
-        NIE nie17 = new NIE('X', 8963, 'A');
-        NIE nie18 = new NIE('Y', 9978963, 'Ñ');
-        NIE nie19 = new NIE('X', 4572263, 'O');
-        NIE nie20 = new NIE('Z', 7894510, 'u');
-
-        /**
          * Now, we create the Validator system.
          */
 
@@ -81,52 +33,34 @@ public class Main {
         Validator validator = new Validator(dniSet, nieSet);
 
         /**
+         * Now, we create the DNIs and NIEs that will be validated by ours system.
+         */
+
+        int[] DNInumbers = {78484464, 72376173, 11817200, 95882054, 63587725, 26861694, 21616083, 26868974, 40135330,
+                89044648, 7458, 12, 236, 100, 78945621, 4578, 546, 78945612, 78945612, 96345896};
+        Character[] DNIletters = {'T', 'A', 'Q', 'E', 'Q', 'V', 'Q', 'Y', 'P', 'X', 'P', 'A', 'Q', 'E', 'p',
+                'C', 't', 'I', 'O', 'U'};
+
+        Character[] NIEFirstLetters = {'X', 'Y', 'Z', 'X', 'Y', 'Z', 'X', 'Y', 'Z', 'X', 'X', 'I', 'P', 'Y',
+                'Z', 'G', 'X', 'Y', 'X', 'Z'};
+        int[] NIEnumbers = {4578963, 4563017, 8796430, 2543312, 3300213, 4531269, 5566443, 3300147,
+                8764559, 9999745, 45763, 4578963, 45763, 45, 4578963, 4963, 8963, 9978963, 4572263, 7894510};
+        Character[] NIEFinalLetters = {'A', 'B', 'G', 'A', 'R', 'V', 'X', 'Z', 'Y', 'P', 'I', 'A', 'A',
+                'A', 'c', 'F', 'Ñ', 'I', 'e', 'a'};
+
+        /**
          * After creating the Validator System, we need to introduce all the DNIs and NIEs into the Validator database.
          */
 
-        validator.addDni(dni);
-        validator.addDni(dni2);
-        validator.addDni(dni3);
-        validator.addDni(dni4);
-        validator.addDni(dni5);
-        validator.addDni(dni6);
-        validator.addDni(dni7);
-        validator.addDni(dni8);
-        validator.addDni(dni9);
-        validator.addDni(dni10);
+        for (int index = 0; index < DNInumbers.length; index++) {
+            DNI dni = new DNI(DNInumbers[index], DNIletters[index]);
+            validator.addDni(dni);
+        }
 
-        validator.addDni(dni11);
-        validator.addDni(dni12);
-        validator.addDni(dni13);
-        validator.addDni(dni14);
-        validator.addDni(dni15);
-        validator.addDni(dni16);
-        validator.addDni(dni17);
-        validator.addDni(dni18);
-        validator.addDni(dni19);
-        validator.addDni(dni20);
-
-        validator.addNie(nie);
-        validator.addNie(nie2);
-        validator.addNie(nie3);
-        validator.addNie(nie4);
-        validator.addNie(nie5);
-        validator.addNie(nie6);
-        validator.addNie(nie7);
-        validator.addNie(nie8);
-        validator.addNie(nie9);
-        validator.addNie(nie10);
-
-        validator.addNie(nie11);
-        validator.addNie(nie12);
-        validator.addNie(nie13);
-        validator.addNie(nie14);
-        validator.addNie(nie15);
-        validator.addNie(nie16);
-        validator.addNie(nie17);
-        validator.addNie(nie18);
-        validator.addNie(nie19);
-        validator.addNie(nie20);
+        for (int index = 0; index < NIEnumbers.length; index++) {
+            NIE nie = new NIE(NIEFirstLetters[index], NIEnumbers[index], NIEFinalLetters[index]);
+            validator.addNie(nie);
+        }
 
         /**
          * Now, we finally can validate all the DNIs and NIEs :D
