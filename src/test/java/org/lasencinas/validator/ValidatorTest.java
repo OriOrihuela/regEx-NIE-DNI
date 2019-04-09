@@ -58,5 +58,4 @@ public class ValidatorTest {
         assertNotNull(validator.getDniSet());
         assertNotNull(validator.getNieSet());
     }
-
 }
