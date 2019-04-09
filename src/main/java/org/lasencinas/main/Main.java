@@ -28,9 +28,7 @@ public class Main {
          * Now, we create the Validator system.
          */
 
-        Set<DNI> dniSet = new HashSet<>();
-        Set<NIE> nieSet = new HashSet<>();
-        Validator validator = new Validator(dniSet, nieSet);
+        Validator validator = new Validator();
 
         /**
          * Now, we create the DNIs and NIEs that will be validated by ours system.

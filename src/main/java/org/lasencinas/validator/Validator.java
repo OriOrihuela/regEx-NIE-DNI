@@ -4,6 +4,7 @@ import org.lasencinas.dni.DNI;
 import org.lasencinas.nie.NIE;
 import org.lasencinas.regEx.RegularExpressions;
 
+import java.util.HashSet;
 import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -17,6 +18,8 @@ public class Validator {
 
     /* ---- Constructor ---- */
     public Validator() {
+        this.dniSet = new HashSet<>();
+        this.nieSet = new HashSet<>();
 
     }
 

@@ -50,4 +50,13 @@ public class ValidatorTest {
         assertFalse(Validator.validateNIE(incorrectNIE, regularExpressions, "NIE"));
     }
 
+    @Test
+    public void gettersAndSettersTest() {
+        Validator validator = new Validator();
+        assertEquals(0, validator.getDniSetSize());
+        assertEquals(0, validator.getNieSetSize());
+        assertNotNull(validator.getDniSet());
+        assertNotNull(validator.getNieSet());
+    }
+
 }
