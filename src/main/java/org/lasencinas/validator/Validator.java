@@ -105,7 +105,7 @@ public class Validator {
 
         for (DNI dni : getDniSet()) {
             if (Validator.validateDNI(dni, regularExpression, "DNI")) {
-               correctDNIs += 1;
+                correctDNIs += 1;
             } else {
                 incorrectDNIs += 1;
             }
