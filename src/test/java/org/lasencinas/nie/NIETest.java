@@ -14,7 +14,7 @@ public class NIETest {
     /* ---- Behaviours ---- */
     @Before
     public void __init__() {
-        nie = new NIE('X',3204761, 'C');
+        nie = new NIE('X', 3204761, 'C');
     }
 
     @Test
